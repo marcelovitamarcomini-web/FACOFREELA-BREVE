@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -12,196 +12,450 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="page-shell">
-      <div class="grid-field" aria-hidden="true"></div>
-      <div class="noise-layer" aria-hidden="true"></div>
-      <div class="aurora aurora-a" aria-hidden="true"></div>
-      <div class="aurora aurora-b" aria-hidden="true"></div>
-      <div class="aurora aurora-c" aria-hidden="true"></div>
-      <div class="halo halo-left" aria-hidden="true"></div>
-      <div class="halo halo-right" aria-hidden="true"></div>
+      <div class="ambient ambient-a" aria-hidden="true"></div>
+      <div class="ambient ambient-b" aria-hidden="true"></div>
+      <div class="ambient ambient-c" aria-hidden="true"></div>
+      <div class="grid-overlay" aria-hidden="true"></div>
+      <div class="noise-overlay" aria-hidden="true"></div>
       <div class="beam beam-top" aria-hidden="true"></div>
 
-      <header class="topbar">
-        <div class="brand-lockup">
-          <span class="brand-icon" aria-hidden="true">
+      <header class="site-header" data-reveal>
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
             <img src="./teste.png" alt="" />
           </span>
 
           <div class="brand-copy">
-            <span class="brand-text">Fa&ccedil;o Freela</span>
-            <span class="brand-subtext">site + sistema para freela</span>
+            <strong>Fa&ccedil;o Freela</strong>
+            <span>site + sistema para freela</span>
           </div>
         </div>
 
         <div class="topbar-meta">
-          <span class="meta-item">site + sistema</span>
-          <span class="status-chip">em breve</span>
+          <span class="meta-chip">em breve</span>
+          <span class="meta-chip meta-chip-outline">feito para freelancers</span>
         </div>
       </header>
 
-      <section class="ticker-shell" aria-hidden="true">
+      <div class="ticker-shell" aria-hidden="true">
         <div class="ticker-track">
+          <span>site + sistema</span>
           <span>organize seu freela</span>
           <span>entenda cada etapa</span>
           <span>tenha mais controle</span>
-          <span>site + sistema</span>
           <span>feito para freelancers</span>
-          <span>em breve</span>
+          <span>lan&ccedil;amento em breve</span>
+          <span>site + sistema</span>
           <span>organize seu freela</span>
           <span>entenda cada etapa</span>
           <span>tenha mais controle</span>
-          <span>site + sistema</span>
           <span>feito para freelancers</span>
-          <span>em breve</span>
+          <span>lan&ccedil;amento em breve</span>
         </div>
-      </section>
+      </div>
 
-      <main class="hero-grid">
-        <section class="hero-copy">
-          <p class="eyebrow">site + sistema para organizar o freela</p>
+      <main class="page-main">
+        <section class="hero section" id="top">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">site + sistema para organizar o freela</p>
 
-          <h1>
-            <span class="title-line">Seu freela mais simples,</span>
-            <span class="title-line">claro e <span class="title-accent">organizado.</span></span>
-          </h1>
+            <h1>Seu freela mais claro e organizado.</h1>
 
-          <p class="lead">
-            O Fa&ccedil;o Freela &eacute; uma plataforma digital criada para ajudar
-            freelancers a organizar melhor o trabalho, entender o fluxo com mais
-            facilidade e ter mais controle no dia a dia.
-          </p>
+            <p class="hero-lead">
+              O Fa&ccedil;o Freela &eacute; uma plataforma digital criada para
+              ajudar freelancers a organizar melhor o trabalho, entender etapas
+              com mais facilidade e ter mais controle no dia a dia.
+            </p>
 
-          <div class="kinetic-band" aria-hidden="true">
-            <span class="kinetic-line line-a"></span>
-            <span class="kinetic-line line-b"></span>
-            <span class="kinetic-glow glow-a"></span>
-            <span class="kinetic-glow glow-b"></span>
-            <span class="kinetic-pill pill-a">clareza</span>
-            <span class="kinetic-pill pill-b">organiza&ccedil;&atilde;o</span>
-            <span class="kinetic-pill pill-c">controle</span>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contato">Acompanhar lan&ccedil;amento</a>
+              <a
+                class="button button-secondary"
+                href="https://wa.me/5511910083188"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Falar no WhatsApp
+              </a>
+            </div>
+
+            <div class="hero-notes">
+              <article class="hero-note">
+                <strong>Plataforma digital real</strong>
+                <span>site + sistema trabalhando juntos</span>
+              </article>
+
+              <article class="hero-note">
+                <strong>Clareza no fluxo</strong>
+                <span>etapas, rotina e contexto mais vis&iacute;veis</span>
+              </article>
+
+              <article class="hero-note">
+                <strong>Lan&ccedil;amento pr&oacute;ximo</strong>
+                <span>uma marca pronta para acompanhar o freelancer</span>
+              </article>
+            </div>
           </div>
 
-          <div class="signal-strip">
-            <article class="signal-card">
-              <span class="signal-tag">01</span>
+          <div class="hero-stage" data-reveal data-depth>
+            <div class="stage-glow stage-glow-a" aria-hidden="true"></div>
+            <div class="stage-glow stage-glow-b" aria-hidden="true"></div>
+
+            <div class="stage-shell">
+              <div class="stage-head">
+                <span class="stage-chip">interface de pr&eacute;-lan&ccedil;amento</span>
+                <span class="stage-status">em breve</span>
+              </div>
+
+              <div class="product-window">
+                <div class="window-top">
+                  <div class="window-dots" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+
+                  <span class="window-badge">Sistema Fa&ccedil;o Freela</span>
+                </div>
+
+                <div class="window-grid">
+                  <article class="window-panel panel-primary">
+                    <span class="panel-label">vis&atilde;o geral</span>
+                    <strong>Organize o freela sem perder leitura do que importa.</strong>
+                    <p>
+                      Um painel simples para enxergar fluxo, prioridades e pr&oacute;ximos passos com menos ru&iacute;do.
+                    </p>
+
+                    <div class="progress-list" aria-hidden="true">
+                      <div class="progress-row">
+                        <span>briefing</span>
+                        <div class="progress-bar"><i style="width: 78%"></i></div>
+                      </div>
+
+                      <div class="progress-row">
+                        <span>execu&ccedil;&atilde;o</span>
+                        <div class="progress-bar"><i style="width: 64%"></i></div>
+                      </div>
+
+                      <div class="progress-row">
+                        <span>entrega</span>
+                        <div class="progress-bar"><i style="width: 42%"></i></div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="window-panel panel-secondary">
+                    <span class="panel-label">etapas</span>
+                    <ul class="stage-list">
+                      <li><span class="stage-dot is-active"></span>Escopo alinhado</li>
+                      <li><span class="stage-dot"></span>Fluxo organizado</li>
+                      <li><span class="stage-dot"></span>Pr&oacute;xima entrega vis&iacute;vel</li>
+                    </ul>
+                  </article>
+
+                  <article class="window-panel panel-tertiary">
+                    <span class="panel-label">ritmo</span>
+                    <div class="mini-chart" aria-hidden="true">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <strong>Mais leitura no dia a dia</strong>
+                  </article>
+                </div>
+              </div>
+
+              <div class="chip-rail" aria-hidden="true">
+                <span class="floating-chip">clareza</span>
+                <span class="floating-chip">organiza&ccedil;&atilde;o</span>
+                <span class="floating-chip">fluxo</span>
+                <span class="floating-chip">controle</span>
+                <span class="floating-chip">sistema</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="benefits section">
+          <div class="section-head" data-reveal>
+            <p class="section-label">Benef&iacute;cios principais</p>
+            <h2>Uma experi&ecirc;ncia pensada para organizar melhor a rotina do freela.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card" data-reveal>
+              <span class="card-index">01</span>
               <strong>Entenda r&aacute;pido</strong>
               <p>
-                Veja com clareza o que est&aacute; acontecendo no seu freela e
-                acompanhe tudo com mais facilidade.
+                Veja com clareza o que est&aacute; acontecendo no seu freela e acompanhe tudo com mais facilidade.
               </p>
             </article>
 
-            <article class="signal-card">
-              <span class="signal-tag">02</span>
+            <article class="benefit-card" data-reveal>
+              <span class="card-index">02</span>
               <strong>Organize melhor</strong>
               <p>
-                Tenha um fluxo mais estruturado para lidar com etapas,
-                informa&ccedil;&otilde;es e rotina.
+                Tenha um fluxo mais estruturado para lidar com etapas, informa&ccedil;&otilde;es e rotina.
               </p>
             </article>
 
-            <article class="signal-card">
-              <span class="signal-tag">03</span>
+            <article class="benefit-card" data-reveal>
+              <span class="card-index">03</span>
               <strong>Tenha controle</strong>
               <p>
-                Acompanhe o dia a dia do freela com mais vis&atilde;o,
-                organiza&ccedil;&atilde;o e praticidade.
+                Acompanhe o dia a dia do freela com mais vis&atilde;o, organiza&ccedil;&atilde;o e praticidade.
               </p>
             </article>
           </div>
         </section>
 
-        <aside class="command-panel">
-          <div class="logo-shell">
-            <span class="shell-tag">pre-launch interface</span>
-            <span class="shell-corner corner-a" aria-hidden="true"></span>
-            <span class="shell-corner corner-b" aria-hidden="true"></span>
-            <span class="shell-corner corner-c" aria-hidden="true"></span>
-            <span class="shell-corner corner-d" aria-hidden="true"></span>
-
-            <img class="logo-watermark" src="./teste.png" alt="" aria-hidden="true" />
-            <div class="logo-mesh" aria-hidden="true"></div>
-
-            <div class="tech-lines" aria-hidden="true">
-              <span class="tech-line tech-line-a"></span>
-              <span class="tech-line tech-line-b"></span>
-              <span class="tech-line tech-line-c"></span>
-              <span class="tech-line tech-line-d"></span>
-            </div>
-
-            <div class="logo-orbits" aria-hidden="true">
-              <span class="logo-orbit orbit-a"></span>
-              <span class="logo-orbit orbit-b"></span>
-              <span class="logo-orbit orbit-c"></span>
-            </div>
-
-            <div class="logo-particles" aria-hidden="true">
-              <span class="particle particle-a"></span>
-              <span class="particle particle-b"></span>
-              <span class="particle particle-c"></span>
-              <span class="particle particle-d"></span>
-              <span class="particle particle-e"></span>
-            </div>
-
-            <div class="logo-chips" aria-hidden="true">
-              <span class="logo-chip chip-a">site</span>
-              <span class="logo-chip chip-b">sistema</span>
-              <span class="logo-chip chip-c">fluxo</span>
-              <span class="logo-chip chip-d">controle</span>
-              <span class="logo-chip chip-e">organiza&ccedil;&atilde;o</span>
-            </div>
-
-            <img class="brand-emblem" src="./teste.png" alt="Logo Fa&ccedil;o Freela" />
-
-            <div class="shell-readline">
-              <span>feito para freelancers</span>
-              <strong>mais simples e organizado</strong>
-            </div>
-
-            <div class="logo-scanline" aria-hidden="true"></div>
+        <section class="summary section">
+          <div class="section-head" data-reveal>
+            <p class="section-label">Em poucas palavras</p>
+            <h2>O que &eacute;, para quem &eacute; e quando chega.</h2>
           </div>
 
-          <div class="stage-summary">
-            <article class="summary-row">
-              <span>o que &eacute;</span>
+          <div class="summary-grid">
+            <article class="summary-card" data-reveal>
+              <span class="summary-label">o que &eacute;</span>
               <strong>Plataforma digital para organizar o freela</strong>
             </article>
 
-            <article class="summary-row">
-              <span>para quem</span>
-              <strong>Para freelancers que querem mais clareza e controle</strong>
+            <article class="summary-card" data-reveal>
+              <span class="summary-label">para quem</span>
+              <strong>Para freelancers que querem mais clareza, estrutura e controle</strong>
             </article>
 
-            <article class="summary-row">
-              <span>lan&ccedil;amento</span>
+            <article class="summary-card" data-reveal>
+              <span class="summary-label">lan&ccedil;amento</span>
               <strong>Em breve</strong>
             </article>
           </div>
-        </aside>
+        </section>
+
+        <section class="technology section">
+          <div class="technology-copy" data-reveal>
+            <p class="section-label">Tecnologia e produto</p>
+            <h2>Uma solu&ccedil;&atilde;o digital real para dar forma ao fluxo do freelancer.</h2>
+            <p class="section-text">
+              O Fa&ccedil;o Freela une site + sistema em uma experi&ecirc;ncia
+              pensada para apresentar a marca, estruturar a rotina e tornar o
+              trabalho mais leg&iacute;vel no dia a dia.
+            </p>
+
+            <div class="technology-list">
+              <article class="tech-item">
+                <strong>Site</strong>
+                <p>Apresenta a proposta da marca com clareza e refor&ccedil;a confian&ccedil;a no produto.</p>
+              </article>
+
+              <article class="tech-item">
+                <strong>Sistema</strong>
+                <p>Ajuda a acompanhar etapas, informa&ccedil;&otilde;es e rotina com mais organiza&ccedil;&atilde;o.</p>
+              </article>
+
+              <article class="tech-item">
+                <strong>Fluxo</strong>
+                <p>Transforma o trabalho em um processo mais simples de entender e controlar.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="technology-stage" data-reveal data-depth>
+            <div class="tech-frame">
+              <div class="tech-grid" aria-hidden="true"></div>
+
+              <article class="tech-panel tech-panel-wide">
+                <span class="panel-label">produto em constru&ccedil;&atilde;o</span>
+                <strong>Mais organiza&ccedil;&atilde;o, menos improviso.</strong>
+                <p>
+                  Uma interface pensada para tornar o trabalho do freelancer mais claro, mais profissional e mais controlado.
+                </p>
+              </article>
+
+              <article class="tech-panel">
+                <span class="panel-label">estrutura</span>
+                <strong>site + sistema</strong>
+              </article>
+
+              <article class="tech-panel">
+                <span class="panel-label">sinal</span>
+                <strong>fluxo vis&iacute;vel</strong>
+              </article>
+
+              <div class="tech-tags" aria-hidden="true">
+                <span>clareza</span>
+                <span>organiza&ccedil;&atilde;o</span>
+                <span>controle</span>
+                <span>freela</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section" id="contato">
+          <div class="section-head" data-reveal>
+            <p class="section-label">Contato</p>
+            <h2>Fale com a marca e acompanhe o lan&ccedil;amento.</h2>
+            <p class="section-text">
+              Se quiser acompanhar o projeto, tirar d&uacute;vidas ou entrar em contato com a equipe, os canais oficiais est&atilde;o aqui.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:suporte@facofreela.com.br" data-reveal>
+              <span class="contact-label">e-mail oficial</span>
+              <strong>suporte@facofreela.com.br</strong>
+              <p class="contact-card-text">
+                Canal central para suporte, d&uacute;vidas e contatos institucionais.
+              </p>
+            </a>
+
+            <article class="contact-card contact-card-group contact-card-wide" data-reveal>
+              <span class="contact-label">whatsapp</span>
+              <strong>Escolha o contato</strong>
+              <p class="contact-card-text">
+                Atendimento direto com a equipe para conversar sobre o projeto e acompanhar o lan&ccedil;amento.
+              </p>
+
+              <div class="contact-inline-links">
+                <a
+                  class="contact-inline-link"
+                  href="https://wa.me/5511910083188"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Falar com Marcelo no WhatsApp"
+                >
+                  <span>Marcelo</span>
+                  <strong>+55 (11) 91008-3188</strong>
+                </a>
+
+                <a
+                  class="contact-inline-link"
+                  href="https://wa.me/5511962094979"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Falar com Daniel no WhatsApp"
+                >
+                  <span>Daniel</span>
+                  <strong>+55 (11) 96209-4979</strong>
+                </a>
+              </div>
+            </article>
+
+            <a class="contact-card" href="https://instagram.com/faco.freela" target="_blank" rel="noreferrer" data-reveal>
+              <span class="contact-label">instagram</span>
+              <strong>@faco.freela</strong>
+              <p class="contact-card-text">
+                Canal da marca para novidades, bastidores e comunica&ccedil;&atilde;o mais r&aacute;pida.
+              </p>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://www.linkedin.com/company/facofreela"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir LinkedIn do Fa&ccedil;o Freela"
+              data-reveal
+            >
+              <span class="contact-label">linkedin</span>
+              <strong>linkedin.com/company/facofreela</strong>
+              <p class="contact-card-text">
+                Presen&ccedil;a institucional da marca para posicionamento, conex&otilde;es e atualiza&ccedil;&otilde;es.
+              </p>
+            </a>
+
+            <article class="contact-card contact-card-brand" data-reveal>
+              <span class="contact-label">institucional</span>
+              <strong>Fa&ccedil;o Freela &copy; 2026</strong>
+              <p class="contact-card-text">
+                Espa&ccedil;o de assinatura da marca com copyright e canais oficiais de contato.
+              </p>
+
+              <div class="contact-meta" aria-label="Informa&ccedil;&otilde;es institucionais">
+                <span>site + sistema para freela</span>
+                <span>todos os direitos reservados</span>
+                <span>suporte@facofreela.com.br</span>
+                <span>@faco.freela</span>
+                <a
+                  href="https://www.linkedin.com/company/facofreela"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir LinkedIn institucional do Fa&ccedil;o Freela"
+                >
+                  linkedin.com/company/facofreela
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
       </main>
 
-      <footer class="footer-note">
-        <div class="footer-brandline">
-          <span>Fa&ccedil;o Freela</span>
-          <span>site + sistema para freela</span>
-          <span>2026</span>
-        </div>
-
-        <div class="footer-contacts">
-          <a class="contact-item" href="mailto:marcelo.marcomini@facofreela.com.br">E-mail: marcelo.marcomini@facofreela.com.br</a>
-          <a class="contact-item" href="mailto:daniel.araujo@facofreela.com.br">E-mail: daniel.araujo@facofreela.com.br</a>
-          <a class="contact-item" href="https://wa.me/5511910083188" target="_blank" rel="noreferrer">WhatsApp: +55 (11) 91008-3188</a>
-          <a class="contact-item" href="https://wa.me/5511962094979" target="_blank" rel="noreferrer">WhatsApp: +55 (11) 96209-4979</a>
-          <a class="contact-item" href="https://instagram.com/facofreela_oficial" target="_blank" rel="noreferrer">Instagram: @facofreela_oficial</a>
-        </div>
+      <footer class="site-footer">
+        <span>Fa&ccedil;o Freela</span>
+        <span>copyright &copy; 2026</span>
+        <span>todos os direitos reservados</span>
+        <span>site + sistema para freela</span>
       </footer>
+
+      <nav class="contact-hotbar" aria-label="Atalhos de contato">
+        <div class="contact-hotbar-shell">
+          <div class="hotbar-intro">
+            <span class="hotbar-kicker">contatos r&aacute;pidos</span>
+            <strong>Fale com a equipe</strong>
+          </div>
+
+          <div class="hotbar-actions">
+            <a
+              class="hotbar-link hotbar-link-whatsapp"
+              href="#contato"
+              aria-label="Ver contatos de WhatsApp"
+            >
+              <span class="hotbar-badge" aria-hidden="true">WA</span>
+              <span class="hotbar-copy">
+                <span>WhatsApp</span>
+                <strong>Escolher contato</strong>
+              </span>
+            </a>
+
+            <a
+              class="hotbar-link hotbar-link-email"
+              href="mailto:suporte@facofreela.com.br"
+              aria-label="Enviar e-mail para o suporte"
+            >
+              <span class="hotbar-badge" aria-hidden="true">@</span>
+              <span class="hotbar-copy">
+                <span>E-mail</span>
+                <strong>suporte@facofreela.com.br</strong>
+              </span>
+            </a>
+
+            <a
+              class="hotbar-link hotbar-link-instagram"
+              href="https://instagram.com/faco.freela"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Abrir Instagram do Fa&ccedil;o Freela"
+            >
+              <span class="hotbar-badge" aria-hidden="true">IG</span>
+              <span class="hotbar-copy">
+                <span>Instagram</span>
+                <strong>@faco.freela</strong>
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
   </body>
 </html>
