@@ -1,0 +1,2 @@
+# Faço Freela robots file
+Sitemap: https://facofreela.com.br/sitemap.xml
